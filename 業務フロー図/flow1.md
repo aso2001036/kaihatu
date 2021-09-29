@@ -80,6 +80,5 @@ webサーバー -> ユーザー :検索結果
 end
 end
 
-end
 @enduml
 ```
