@@ -92,8 +92,7 @@ package "AnyPort" as target_system {
 
 shopItems             }o-le-o|   shop
 shopItems             }o-do-o|   iCategoryId
-shopItems             }o-up-o|   users  
-securityInformation   }o-do-o|   users  
+shopItems             }o-up-o|   users   
 searchHistory         }o-le-o|   users
 
 
