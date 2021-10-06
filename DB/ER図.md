@@ -24,6 +24,7 @@ package "AnyPort" as target_system {
         + user_id[PK]
         --
         user_name
+        user_name_kana
         user_image
         user_mail
         user_postal_code
