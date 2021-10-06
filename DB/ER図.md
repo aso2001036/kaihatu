@@ -25,7 +25,9 @@ package "AnyPort" as target_system {
         --
         user_name
         user_image
-        mail
+        user_mail
+        user_postal_code
+        user_address
         user_pass
         reg_date
         upd_date
