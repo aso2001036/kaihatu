@@ -71,9 +71,6 @@ package "AnyPort" as target_system {
         item_image5
         item_explanation
         item_price
-        # user_id [FK]
-        # currency_code [FK]
-        # language_code [FK]
         reg_date
         upd_date
         del_date
