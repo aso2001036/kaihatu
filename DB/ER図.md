@@ -124,10 +124,10 @@ package "AnyPort" as target_system {
   }
 
 shopItems             }o-le-o|   shop
-shopItems             }o-do-o|   iCategoryId
-shopItems             }o-ri-o|   purchaseHistory
-shopItems             }o-ri-o|   cart
-shopItems             }o-ri-o|   favorite
+shopItems             }o-up-o|   iCategoryId
+shopItems             }o-do-o|   purchaseHistory
+shopItems             }o-do-o|   cart
+shopItems             }o-do-o|   favorite
 searchHistory         }o-le-o|   users
 users                 }o-up-o|   purchaseHistory
 users                 }o-up-o|   cart
