@@ -124,7 +124,7 @@ package "AnyPort" as target_system {
   }
 
 shopItems             }o-le-o|   shop
-shopItems             }o-up-o|   iCategoryId
+shopItems             }o-ri-o|   iCategoryId
 shopItems             }o-do-o|   purchaseHistory
 shopItems             }o-do-o|   cart
 shopItems             }o-do-o|   favorite
