@@ -87,6 +87,40 @@ package "AnyPort" as target_system {
         del_date
     }
     
+    entity "お気に入りテーブル" as favorite <t_favorite> <<T,TRANSACTION_MARK_COLOR>> {
+        + user_id [PK][FK]
+        + favorite_id [PK]
+        --
+        shop_id
+        item_id
+        reg_date
+        upd_date
+        del_date
+    }
+    
+    entity "カードテーブル" as cart <t_cart> <<T,TRANSACTION_MARK_COLOR>> {
+        + user_id [PK][FK]
+        + cart_id [PK]
+        --
+        shop_id
+        item_id
+        item_count
+        reg_date
+        upd_date
+        del_date
+    }
+    
+    entity "購入履歴テーブル" as purchaseHistory <t_purchaseHistory> <<T,TRANSACTION_MARK_COLOR>> {
+        + user_id [PK][FK]
+        + purchaseHistory_id [PK]
+        --
+        shop_id
+        item_id
+        item_count
+        reg_date
+        upd_date
+        del_date
+    }
 
   }
 
