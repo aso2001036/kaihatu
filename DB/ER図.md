@@ -129,9 +129,9 @@ shopItems             }o-do-o|   purchaseHistory
 shopItems             }o-do-o|   cart
 shopItems             }o-do-o|   favorite
 searchHistory         }o-le-o|   users
-users                 }o-up-o|   purchaseHistory
-users                 }o-up-o|   cart
-users                 }o-up-o|   favorite
+users                 |o-up-o|   purchaseHistory
+users                 |o-up-o|   cart
+users                 |o-up-o|   favorite
 
 @enduml
 ```
