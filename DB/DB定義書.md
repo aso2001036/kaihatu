@@ -1,6 +1,6 @@
 # DB定義書
 ## ER図
-[ER図はこちら](https://github.com/Aso2001026/tyarekyara-2021/blob/main/md/DB/%E4%BF%AE%E6%AD%A3%E5%BE%8C/ER%E5%9B%B3.md)
+[ER図はこちら](https://github.com/aso2001036/kaihatu/blob/main/DB/ER%E5%9B%B3.md)
 
 *****
 <img src="../../../img/DB/AnyPort_ER_var7.png" width="500">
