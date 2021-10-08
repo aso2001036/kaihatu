@@ -1,3 +1,4 @@
+```uml
 @startuml
 [*]-down->トップページ
 トップページ:・おすすめ商品表示
@@ -64,3 +65,4 @@ state footer{
 ヘルプ:・Q&A表示
 }
 @enduml
+```
