@@ -97,7 +97,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "カードテーブル" as cart <t_cart> <<T,TRANSACTION_MARK_COLOR>> {
+    entity "カートテーブル" as cart <t_cart> <<T,TRANSACTION_MARK_COLOR>> {
         + user_id [PK][FK]
         + cart_id [PK]
         --
@@ -129,6 +129,9 @@ shopItems             }o-ri-o|   purchaseHistory
 shopItems             }o-ri-o|   cart
 shopItems             }o-ri-o|   favorite
 searchHistory         }o-le-o|   users
+users            　　　　　　　　 }o-up-o|   purchaseHistory
+users             　　　　　　　　}o-up-o|   cart
+users             　　　　　　　　}o-up-o|   favorite
 
 @enduml
 ```
