@@ -15,8 +15,10 @@
 |---|-----|--|--|--|--|
 |ユーザーID|user_id|int(12)|○|○||
 |ユーザー名|user_name|varchar(30)||○||
+|ユーザー名(カナ)|user_name_kana|varchar(30)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
-|メールアドレス|mail|varchar(100)||○||
+|郵便番号|user_postal_code|varchar(15)||○||
+|メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(20)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
@@ -75,7 +77,6 @@
 |ユーザーID|user_id|int(12)|○|○|○|
 |履歴ID|searchHistory_id|int(12)|○|○||
 |検索ワード|searchWord|varchar(200)||○||
-|言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
