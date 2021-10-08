@@ -43,7 +43,6 @@
 |住所|shop_address|varchar(100)||○||
 |店説明|shop_explanation|varchar(1000)||||
 |店画像ファイル名|shop_image|varchar(200)||||
-|クレジットカードフラグ|credit_flag|int(1)||||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
@@ -63,9 +62,6 @@
 |商品画像ファイル名5|item_image5|varchar(200)||||
 |商品説明|item_explanation|varchar(500)||||
 |単価|item_price|int(30)||○||
-|ユーザーID|user_id|int(12)||○|○|
-|通貨コード|currency_code|varchar(3)||○|○|
-|言語コード|language_code|varchar(2)||○|○|
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
 |削除日|del_date|date||||
