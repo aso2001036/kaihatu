@@ -52,7 +52,6 @@ package "AnyPort" as target_system {
         shop_address
         shop_explanation
         shop_image
-        credit_flag
         reg_date
         upd_date
         del_date
@@ -91,8 +90,8 @@ package "AnyPort" as target_system {
         + user_id [PK][FK]
         + favorite_id [PK]
         --
-        shop_id
-        item_id
+        shop_id [FK]
+        item_id [FK]
         reg_date
         upd_date
         del_date
@@ -102,8 +101,8 @@ package "AnyPort" as target_system {
         + user_id [PK][FK]
         + cart_id [PK]
         --
-        shop_id
-        item_id
+        # shop_id [FK]
+        # item_id [FK]
         item_count
         reg_date
         upd_date
@@ -114,8 +113,8 @@ package "AnyPort" as target_system {
         + user_id [PK][FK]
         + purchaseHistory_id [PK]
         --
-        shop_id
-        item_id
+        # shop_id [FK]
+        # item_id [FK]
         item_count
         reg_date
         upd_date
