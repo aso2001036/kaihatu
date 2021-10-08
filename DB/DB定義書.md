@@ -18,6 +18,7 @@
 |ユーザー名(カナ)|user_name_kana|varchar(30)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
 |郵便番号|user_postal_code|varchar(15)||○||
+|住所|user_address|varchar(15)||○||
 |メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(20)||○||
 |登録日|reg_date|date||○||
