@@ -41,6 +41,7 @@
 |---|-----|--|--|--|--|
 |ショップID|shop_id|int(12)|○|○||
 |店名|shop_name|varchar(100)||○||
+|郵便番号|shop_postal_code|varchar(15)||○||
 |住所|shop_address|varchar(100)||○||
 |店説明|shop_explanation|varchar(1000)||||
 |店画像ファイル名|shop_image|varchar(200)||||
