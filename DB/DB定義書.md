@@ -13,7 +13,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ユーザーID|user_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
 |ユーザー名|user_name|varchar(100)||○||
 |ユーザー名(カナ)|user_name_kana|varchar(100)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
