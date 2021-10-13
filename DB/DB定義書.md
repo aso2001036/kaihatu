@@ -52,8 +52,8 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ショップID|shop_id|int(12)|○|○|○|
-|商品ID|item_id|int(12)|○|○||
+|ショップID|shop_id|int(8)|○|○|○|
+|商品ID|item_id|int(8)|○|○||
 |商品名|item_name|varchar(100)||○||
 |商品カテゴリID|iCategory_id|int(12)||○|○|
 |商品画像ファイル名1|item_image1|varchar(200)||||
@@ -71,7 +71,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ユーザーID|user_id|int(12)|○|○|○|
+|ユーザーID|user_id|varchar(50)|○|○||
 |履歴ID|searchHistory_id|int(12)|○|○||
 |検索ワード|searchWord|varchar(200)||○||
 |登録日|reg_date|datetime||○||
@@ -82,10 +82,10 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|お気に入りID|favorite_id|int(12)|○|○||
-|ユーザーID|user_id|int(12)|○|○|○|
-|ショップID|shop_id|int(12)||○|○|
-|商品ID|item_id|int(12)||○|○|
+|お気に入りID|favorite_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|ショップID|shop_id|int(8)||○|○|
+|商品ID|item_id|int(8)||○|○|
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -94,11 +94,11 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|カートID|cart_id|int(12)|○|○||
-|ユーザーID|user_id|int(12)|○|○|○|
-|ショップID|shop_id|int(12)||○|○|
-|商品ID|item_id|int(12)||○|○|
-|個数|item_count|int(12)||○||
+|カートID|cart_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|ショップID|shop_id|int(8)||○|○|
+|商品ID|item_id|int(8)||○|○|
+|個数|item_count|int(50)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -107,11 +107,11 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|購入履歴ID|purchaseHistory_id|int(12)|○|○||
-|ユーザーID|user_id|int(12)|○|○|○|
-|ショップID|shop_id|int(12)||○|○|
-|商品ID|item_id|int(12)||○|○|
-|個数|item_count|int(12)||○||
+|購入履歴ID|purchaseHistory_id|int(8)|○|○||
+|ユーザーID|user_id|varchar(50)|○|○||
+|ショップID|shop_id|int(8)||○|○|
+|商品ID|item_id|int(8)||○|○|
+|個数|item_count|int(50)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
