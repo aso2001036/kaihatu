@@ -13,12 +13,12 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ユーザーID|user_id|int(12)|○|○||
+|ユーザーID|user_id|int(8)|○|○||
 |ユーザー名|user_name|varchar(30)||○||
 |ユーザー名(カナ)|user_name_kana|varchar(30)||○||
 |ユーザー画像ファイル名|user_image|varchar(200)||||
-|郵便番号|user_postal_code|varchar(15)||○||
-|住所|user_address|varchar(15)||○||
+|郵便番号|user_postal_code|varchar(7)||○||
+|住所|user_address|varchar(100)||○||
 |メールアドレス|user_mail|varchar(100)||○||
 |パスワード|user_pass|varchar(20)||○||
 |登録日|reg_date|date||○||
@@ -29,7 +29,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|商品カテゴリID|iCategory_id|int(12)|○|○||
+|商品カテゴリID|iCategory_id|int(8)|○|○||
 |カテゴリ名|iCategory_name|varchar(100)||○||
 |登録日|reg_date|date||○||
 |更新日|upd_date|date||||
@@ -39,9 +39,9 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ショップID|shop_id|int(12)|○|○||
+|ショップID|shop_id|int(8)|○|○||
 |店名|shop_name|varchar(100)||○||
-|郵便番号|shop_postal_code|varchar(15)||○||
+|郵便番号|shop_postal_code|varchar(7)||○||
 |住所|shop_address|varchar(100)||○||
 |店説明|shop_explanation|varchar(1000)||||
 |店画像ファイル名|shop_image|varchar(200)||||
