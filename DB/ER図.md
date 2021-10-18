@@ -35,6 +35,16 @@ package "AnyPort" as target_system {
         del_date
     }
     
+    entity "ユーザーマスタ" as pre_users  <m_pre_users> <<M,MASTER_MARK_COLOR>> {
+        + pre_user_id[PK]
+        --
+        pre_user_mail
+        pre_user_token
+        reg_date
+        upd_date
+        del_date
+    }
+    
     entity "商品カテゴリIDマスタ" as iCategoryId <m_iCategory> <<M,MASTER_MARK_COLOR>> {
         + iCategory_id [PK]
         --
@@ -132,6 +142,8 @@ searchHistory         }o-le-o|   users
 users                 |o-up-o|   purchaseHistory
 users                 |o-up-o|   cart
 users                 |o-up-o|   favorite
+pre_users             }o-ri-o|   users
+       
 
 @enduml
 ```
