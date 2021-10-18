@@ -35,7 +35,7 @@ package "AnyPort" as target_system {
         del_date
     }
     
-    entity "ユーザーマスタ" as pre_users  <m_pre_users> <<M,MASTER_MARK_COLOR>> {
+    entity "プレユーザーマスタ" as pre_users  <m_pre_users> <<M,MASTER_MARK_COLOR>> {
         + pre_user_id[PK]
         --
         pre_user_mail
