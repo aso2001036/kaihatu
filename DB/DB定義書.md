@@ -29,7 +29,7 @@
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
-|ユーザーID|user_id|int(8)|○|○||
+|ユーザーID|pre_user_id|int(8)|○|○||
 |メールアドレス|pre_user_mail|varchar(100)||○||
 |トークン|pre_user_token|varchar(50)||○||
 |登録日|reg_date|datetime||○||
@@ -83,7 +83,7 @@
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |---|-----|--|--|--|--|
 |ユーザーID|user_id|varchar(50)|○|○||
-|履歴ID|searchHistory_id|int(12)|○|○||
+|履歴ID|searchHistory_id|int(8)|○|○||
 |検索ワード|searchWord|varchar(200)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
@@ -120,6 +120,7 @@
 |---|-----|--|--|--|--|
 |購入履歴ID|purchaseHistory_id|int(8)|○|○||
 |ユーザーID|user_id|varchar(50)|○|○||
+|購入番号|purchase_num|int(8)||○||
 |ショップID|shop_id|int(8)||○|○|
 |商品ID|item_id|int(8)||○|○|
 |個数|item_count|int(50)||○||
