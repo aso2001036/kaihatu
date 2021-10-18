@@ -3,7 +3,7 @@
 [ER図はこちら](https://github.com/aso2001036/kaihatu/blob/main/DB/ER%E5%9B%B3.md)
 
 *****
-<img src="./img/ER図.png" width="500">
+<img src="./img/ER図2.png" width="500">
 
 *****
 
