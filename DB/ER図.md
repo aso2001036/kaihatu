@@ -123,6 +123,7 @@ package "AnyPort" as target_system {
         + user_id [PK][FK]
         + purchaseHistory_id [PK]
         --
+        purchase_num
         # shop_id [FK]
         # item_id [FK]
         item_count
