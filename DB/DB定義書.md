@@ -25,6 +25,17 @@
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
 
+## m_pre_users
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|ユーザーID|user_id|int(8)|○|○||
+|メールアドレス|pre_user_mail|varchar(100)||○||
+|トークン|pre_user_token|varchar(50)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
 ## m_iCategoryId
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
