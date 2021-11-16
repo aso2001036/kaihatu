@@ -1,0 +1,29 @@
+.log-form{
+    width: 360px;
+    padding: 20px 30px;
+    margin: 10% auto;
+    border: 1px solid #ccc;
+    background-color: #F9F4E7;
+    box-shadow: 1px 1px 2px #ccc;
+}
+h3{
+    text-align: center;
+}
+img{
+    margin: 0 0 0 20%;
+}
+h4{
+    width: 360px;
+    color: #7A7272;
+    padding: 0 0 0 10%;
+    margin: 10% 0 10% 7%;
+}
+input{
+    margin-left: 25%;
+    width: 180px;
+    padding: 20px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 1px 2px #666;
+    background-color: #DFEFED;
+    position: relative;
+}
