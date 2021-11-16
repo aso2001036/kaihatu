@@ -1,0 +1,261 @@
+body{
+    background: #F5F0E0;
+}
+
+
+.him{
+    margin-left: 5px;
+    border: 1px solid #EC8362;
+    border-radius: 5px;
+    background-color: #EC8362;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #ccc;
+}
+
+.top_button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #EC8362;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.qa-list dl {
+    position: relative;
+    margin: 0;
+    padding: 28px 80px 28px 30px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+}
+.qa-list dl:first-child {
+    border-top: 1px solid #000;
+}
+.qa-list dl::before {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    content: '';
+    transform: rotate(135deg);
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.qa-list .open::before {
+    transform: rotate(-45deg);
+}
+.qa-list dl dt {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.qa-list dl dt::before {
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    content: '';
+    color: #3285bf;
+}
+.qa-list dl dd::before {
+    font-size: 22px;
+    line-height: 1;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    display: block;
+    content: '';
+    font-weight: bold;
+    color: #3285bf;
+}
+.qa-list dl dd {
+    position: relative;
+    display: none;
+    height: auto;
+    margin: 20px 0 0;
+    padding: 0 0 0 50px;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .qa-list dl {
+        position: relative;
+        padding: 15px 40px 15px 10px;
+    }
+    .qa-list dl::before {
+        top: 20px;
+        right: 20px;
+        width: 7px;
+        height: 7px;
+    }
+    .qa-list dl dt {
+        padding: 0 0 0 30px;
+        font-size: 14px;
+    }
+    .qa-list dl dt::before {
+        font-size: 14px;
+        top: 3px;
+        left: 5px;
+        content: '';
+    }
+    .qa-list dl dd::before {
+        font-size: 14px;
+        top: 5px;
+        left: 5px;
+        content: '';
+    }
+    .qa-list dl dd {
+        margin: 10px 0 0;
+        padding: 0 0 0 30px;
+        font-size: 14px;
+    }
+    .qa-list dl dd p {
+        margin: 30px 0 0;
+    }
+    .qa-list dl dd p:first-child{
+        margin-top: 0;
+    }
+}
+
+/*------------------------------
+  画像付き吹き出し(会話)
+------------------------------*/
+/* 吹き出し 全体*/
+.talking {
+    margin-bottom:2em;
+    position:relative;
+}
+
+.talking:before , .talking:after {
+    clear:both;
+    content:"";
+    display:block;
+}
+
+/*アイコン*/
+.talking figure {
+    width:60px;     /*アイコンの横幅*/
+    height:60px;    /*アイコンの縦幅*/
+}
+
+.talking-left_icon {
+    float:left;
+    margin-right:20px;    /*アイコンの右の余白(左の吹き出し)*/
+}
+
+.talking-right_icon {
+    float:right;
+    margin-left:20px;    /*アイコンの左の余白(右の吹き出し)*/
+}
+
+.talking figure img {
+    width:100%;
+    height:100%;
+    margin:0;
+    border:2px solid #000000;
+    border-radius:50%;    /*アイコンの角丸*/
+}
+
+/*アイコンの下の名前*/
+.talking-left_icon figcaption ,
+.talking-right_icon figcaption {
+    padding:2px 0 0;
+    font-size:12px;
+    text-align:center;
+}
+
+/*吹き出しのセリフ部分*/
+.talking-left , .talking-right  {
+    position:relative;
+    padding:10px;
+    border-style:solid;    /*枠線の線種*/
+    border-radius:10px;    /*セリフを入れる部分の角丸*/
+    max-width: calc(100% - 80px);
+}
+
+.talking p {
+    margin:0;
+}
+
+.talking p :last-child {
+    margin:0;
+}
+
+/*---左の吹き出し---*/
+.talking-left {
+    float:left;
+    border-width:2px;         /*枠線の太さ*/
+    border-color:#A9D2C8;   /*枠線の色*/
+    background:#A9D2C8;    /*背景色*/
+}
+
+/*左の吹き出し 三角*/
+.talking-left:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #A9D2C8;  /*三角の線になる部分*/
+    top: 15px;
+    left: -22px;
+}
+
+.talking-left:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #A9D2C8;
+    top: 15px;
+    left: -19px;
+}
+
+/*---右の吹き出し---*/
+.talking-right {
+    float:right;
+    border-width:2px;      /*枠線の太さ*/
+    border-color:#A9D2C8;    /*枠線の色*/
+    background:#A9D2C8;    /*背景色*/
+}
+
+/*右の吹き出し 三角*/
+.talking-right:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #A9D2C8;  /*三角の線になる部分*/
+    top: 15px;
+    right: -22px;
+}
+
+.talking-right:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #A9D2C8;
+    top: 15px;
+    right: -19px;
+}
+.qora{
+	margin-top: 65px;
+}
