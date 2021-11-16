@@ -1,0 +1,24 @@
+.log-form{
+    width: 360px;
+    padding: 20px 30px;
+    margin: 10% auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #ccc;
+}
+img{
+    padding: 0 0 0 10%;
+}
+h6{
+    width: 360px;
+    padding: 0 0 0 25%;
+    margin: 10% auto;
+}
+.k_button{
+    margin-left: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 3px #000;
+    background-color: #a9ca8f;
+}
