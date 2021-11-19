@@ -81,6 +81,7 @@ package "AnyPort" as target_system {
         item_image5
         item_explanation
         item_price
+        count
         reg_date
         upd_date
         del_date
@@ -127,6 +128,16 @@ package "AnyPort" as target_system {
         # shop_id [FK]
         # item_id [FK]
         item_count
+        reg_date
+        upd_date
+        del_date
+    }
+    
+    entity "お知らせテーブル" as information <t_information> <<T,TRANSACTION_MARK_COLOR>> {
+        + intformation_id [PK]
+        --
+        title
+        text
         reg_date
         upd_date
         del_date
