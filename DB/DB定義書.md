@@ -35,6 +35,7 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
+|フラグ|flag|int(1)||○||
 
 ## m_iCategoryId
 
@@ -45,6 +46,7 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
+
 ## m_shop
 
 |和名|属性名(カラム名)|型|PK|NN|FK|
@@ -74,6 +76,7 @@
 |商品画像ファイル名5|item_image5|varchar(200)||||
 |商品説明|item_explanation|varchar(500)||||
 |単価|item_price|int(30)||○||
+|閲覧回数|count|int(30)||○||
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
@@ -127,3 +130,15 @@
 |登録日|reg_date|datetime||○||
 |更新日|upd_date|datetime||||
 |削除日|del_date|datetime||||
+
+## t_information
+
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|---|-----|--|--|--|--|
+|お知らせID|information_id|int(8)|○|○||
+|タイトル|title|varchar(50)||○||
+|本文|text|varchar(1000)||○||
+|登録日|reg_date|datetime||○||
+|更新日|upd_date|datetime||||
+|削除日|del_date|datetime||||
+
